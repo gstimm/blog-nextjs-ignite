@@ -1,1 +1,16 @@
-// TODO
+.container {
+  max-width: 1120px;
+  height: 105px;
+  line-height: 105px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+
+  img {
+    cursor: pointer;
+  }
+}
