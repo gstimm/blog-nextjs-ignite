@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 import { useState } from 'react';
 import Header from '../components/Header';
-import commonStyles from '../styles/common.module.scss';
 import { getPrismicClient } from '../services/prismic';
 import styles from './home.module.scss';
 
@@ -74,7 +73,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
                 <strong>{post.data.title}</strong>
                 <p>{post.data.subtitle}</p>
                 <div>
-                  <FiCalendar size={20} />
+                  <FiCalendar size={20} color="#bbb" />
                   <time>
                     {format(
                       new Date(post.first_publication_date),
@@ -84,7 +83,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
                       }
                     )}
                   </time>
-                  <FiUser size={20} />
+                  <FiUser size={20} color="#bbb" />
                   <span>{post.data.author}</span>
                 </div>
               </a>
